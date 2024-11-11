@@ -8,9 +8,9 @@ class User {
 }
 
 const x = new User("Checco", "Zalone", 47, "Bari");
-console.log(x);
+console.log("Checco", x);
 const y = new User("Enzo", "Salvi", 52, "Roma");
-console.log(y);
+console.log("Er Cipolla", y);
 
 const older = function () {
   if (x.age > y.age) {
@@ -20,3 +20,24 @@ const older = function () {
   }
 };
 older();
+
+class Pet {
+  constructor(_petName, _ownerName, _species, _breed) {
+    this.petName = _petName;
+    this.ownerName = _ownerName;
+    this.species = _species;
+    this.breed = _breed;
+  }
+}
+
+const petDataArray = function () {
+  const petName = document.getElementById("pname");
+  let petNameValue = petName.value;
+  localStorage.setItem("pname", petNameValue); // Salva solo una volta
+  console.log(petNameValue); // Mostra il valore nella console
+};
+
+/*const sameOwner = function(){
+
+}
+sameOwner();*/

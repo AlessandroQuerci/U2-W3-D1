@@ -6,6 +6,29 @@
     <title>Esercizio U2-W3-D1</title>
   </head>
   <body>
+    <h2>Your pet identity!</h2>
+    <form action="./objects.js">
+      <div>
+        <label for="pname"> Pet name: </label>
+        <input type="text" id="pname" name="pname" placeholder="Write your pet name here..." />
+      </div>
+      <div>
+        <label for="oname"> Owner name: </label>
+        <input type="text" id="oname" name="oname" placeholder="Write your name here..." />
+      </div>
+      <div>
+        <label for="species"> Species: </label>
+        <input type="text" id="species" name="species" placeholder="Write your pet species here..." />
+      </div>
+      <div>
+        <label for="breed"> Breed: </label>
+        <input type="text" id="breed" name="breed" placeholder="Write your pet breed here..." />
+      </div>
+
+      <button onclick="petDataArray()" id="submitBtn" type="button">Submit</button>
+      <ul id="ulForm"></ul>
+    </form>
+
     <script src="./objects.js"></script>
   </body>
 </html>
